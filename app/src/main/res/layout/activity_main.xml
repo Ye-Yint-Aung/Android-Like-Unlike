@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/imgLayout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/likeImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/like"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/unlikeImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/unlike"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:text="1500 : people like this."
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="29dp">
+
+        <Button
+            android:id="@+id/btnLike"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="LIKE" />
+
+        <Button
+            android:id="@+id/btnUnlike"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="UNLIKE" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
